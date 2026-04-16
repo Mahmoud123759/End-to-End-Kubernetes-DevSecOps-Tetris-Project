@@ -18,6 +18,8 @@ spec:
         image: 983470701667.dkr.ecr.us-east-1.amazonaws.com/tetris:4
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: ecr-secret
 ---
 apiVersion: v1
 kind: Service
